@@ -1,0 +1,15 @@
+spring:
+  curator:
+    sleep-time-ms: 3000
+    max-retries: 3
+    session-time-out-ms: 1800000
+    zookeeper-address: 192.168.40.14:2181
+    lock-node:
+      - ROOT-LOCK
+    interface-server:
+      share-node: INTER-NODE
+
+server:
+  port: 80
+  servlet:
+    context-path: /zk
